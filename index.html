@@ -30,66 +30,72 @@
       background: var(--light-bg);
       color: #1a1a1a;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       text-align: center;
-      padding: 4rem 2rem 3rem;
+      padding: 6rem 2rem 5rem;
+      position: relative;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      max-width: 700px;
+      font-size: 1.25rem;
+      max-width: 740px;
       margin: 0 auto;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 880px;
       margin: auto;
-      padding: 2rem 1.5rem;
+      padding: 3rem 1.5rem 5rem;
     }
 
     .bio-section h2 {
       font-family: 'Playfair Display', serif;
       color: var(--primary);
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      margin-bottom: 1.25rem;
     }
 
     .bio-section img {
-      width: 220px;
+      width: 260px;
       float: right;
-      margin-left: 1.5rem;
-      margin-bottom: 1rem;
-      border-radius: 16px;
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 18px;
       object-fit: cover;
       border: 4px solid var(--secondary);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     .bio-section p {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
     }
 
     .pricing {
-      background: linear-gradient(135deg, var(--secondary), var(--accent));
-      color: white;
-      padding: 2rem;
-      border-radius: 16px;
-      margin-top: 3rem;
+      background: white;
+      border: 1px solid #eee;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+      padding: 2.5rem;
+      border-radius: 20px;
+      margin-top: 4rem;
     }
 
     .pricing h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 1.9rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
     }
 
     .pricing ul {
@@ -98,37 +104,46 @@
     }
 
     .pricing li {
-      font-size: 1.1rem;
-      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+      margin-bottom: 0.85rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .pricing li::before {
+      content: '✨';
+      position: absolute;
+      left: 0;
     }
 
     .cta {
       text-align: center;
-      margin: 3rem auto 4rem;
+      margin: 4rem auto 5rem;
     }
 
     .cta a {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      padding: 1.1rem 2.2rem;
+      font-size: 1.25rem;
       font-weight: 600;
-      border-radius: 32px;
+      border-radius: 50px;
       text-decoration: none;
       display: inline-block;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .cta a:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transform: scale(1.03);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.95rem;
-      color: #555;
+      padding: 3rem 1rem 2rem;
+      font-size: 1rem;
+      color: #444;
     }
 
     footer a {
@@ -144,13 +159,14 @@
       .bio-section img {
         float: none;
         display: block;
-        margin: 0 auto 1.5rem;
+        margin: 0 auto 2rem;
       }
     }
+
     .sparkle-heart {
-    display: inline-block;
-    animation: sparkle 1.5s infinite ease-in-out;
-      }
+      display: inline-block;
+      animation: sparkle 1.5s infinite ease-in-out;
+    }
   </style>
 </head>
 <body>
@@ -171,16 +187,16 @@
     <section class="pricing">
       <h2>Offerings</h2>
       <ul>
-        <li>✨ 2 Questions Tarot Reading — <strong>$25</strong></li>
-        <li>✨ 30 Minute Astro or Tarot — <strong>$45</strong></li>
-        <li>✨ 60 Minute Astro or Tarot — <strong>$70</strong></li>
-        <li>✨ 72 Minute Astro/Tarot Combo — <strong>$80</strong></li>
-        <li>✨ 90 Minute Akashic Reading — <strong>$100</strong></li>
+        <li>2 Questions Tarot Reading — <strong>$25</strong></li>
+        <li>30 Minute Astro or Tarot — <strong>$45</strong></li>
+        <li>60 Minute Astro or Tarot — <strong>$70</strong></li>
+        <li>72 Minute Astro/Tarot Combo — <strong>$80</strong></li>
+        <li>90 Minute Akashic Reading — <strong>$100</strong></li>
       </ul>
     </section>
 
     <div class="cta">
-      <a href="https://venusmoonwellness.com" target="_blank">Book a Reading</a>
+      <a href="https://sapphirasmagic.github.io" target="_blank">Book a Reading</a>
     </div>
   </main>
 
