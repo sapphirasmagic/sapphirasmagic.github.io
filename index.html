@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 🌟 Favicon (Icon Logo) -->
-  <link rel="icon" href="S logo.png" type="image/png">
-
-  <!-- ✨ Optional: Logo for social previews (Text Logo) -->
-    <meta property="og:image" content="Sapphira's Magic logo.png" />
-  <meta name="twitter:image" content="Sapphira's Magic logo.png" />
-<meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sapphira's Magic – Mystic Readings & Music</title>
+
+  <!-- 🌟 Favicon -->
+  <link rel="icon" href="S logo.png" type="image/png" />
+
+  <!-- 🌐 Social Preview -->
+  <meta property="og:image" content="Sapphira's Magic logo.png" />
+  <meta name="twitter:image" content="Sapphira's Magic logo.png" />
   <meta name="description" content="Sapphira is a queer, neurodivergent Black femme artist and mystic based in Toronto, offering tarot, astrology, and musical storytelling." />
   <meta name="keywords" content="Sapphira, tarot reader, musician, oracle, astrology, Toronto mystic, queer Black femme artist" />
   <meta name="author" content="Sapphira" />
-  <title>Sapphira's Magic – Mystic Readings & Music</title>
+
+  <!-- 🖋️ Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #6C1D45;
@@ -42,19 +47,18 @@
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       text-align: center;
-      padding: 6rem 2rem 5rem;
-      position: relative;
+      padding: 5rem 1.5rem 4rem;
     }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 0.75rem;
+    header img {
+      max-width: 180px;
+      height: auto;
+      margin-bottom: 1rem;
     }
 
     header p {
-      font-size: 1.25rem;
-      max-width: 740px;
+      font-size: 1.2rem;
+      max-width: 720px;
       margin: 0 auto;
     }
 
@@ -64,22 +68,22 @@
       padding: 3rem 1.5rem 5rem;
     }
 
-    .bio-section h2 {
+    .bio-section h2,
+    .pricing h2 {
       font-family: 'Playfair Display', serif;
       color: var(--primary);
-      font-size: 2.2rem;
-      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
     .bio-section img {
-      width: 260px;
-      float: right;
-      margin-left: 2rem;
-      margin-bottom: 1.5rem;
+      width: 100%;
+      max-width: 260px;
       border-radius: 18px;
-      object-fit: cover;
       border: 4px solid var(--secondary);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      margin-bottom: 1.5rem;
     }
 
     .bio-section p {
@@ -96,21 +100,14 @@
       margin-top: 4rem;
     }
 
-    .pricing h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.9rem;
-      color: var(--primary);
-      margin-bottom: 1.25rem;
-    }
-
     .pricing ul {
       list-style: none;
       padding-left: 0;
     }
 
     .pricing li {
-      font-size: 1.15rem;
-      margin-bottom: 0.85rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
       position: relative;
       padding-left: 1.5rem;
     }
@@ -123,14 +120,14 @@
 
     .cta {
       text-align: center;
-      margin: 4rem auto 5rem;
+      margin: 3rem auto;
     }
 
     .cta a {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      padding: 1.1rem 2.2rem;
-      font-size: 1.25rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
       font-weight: 600;
       border-radius: 50px;
       text-decoration: none;
@@ -146,7 +143,7 @@
 
     footer {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 2rem 1rem;
       font-size: 1rem;
       color: #444;
     }
@@ -160,33 +157,44 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
-      .bio-section img {
-        float: none;
-        display: block;
-        margin: 0 auto 2rem;
-      }
-    }
-
     .sparkle-heart {
       display: inline-block;
       animation: sparkle 1.5s infinite ease-in-out;
     }
+
+    @media (min-width: 768px) {
+      .bio-section {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+
+      .bio-section img {
+        margin-bottom: 0;
+      }
+
+      .bio-section > div {
+        flex: 1;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="Sapphira's Magic logo.png" alt="Sapphira logo" />
+    <img src="Sapphira's Magic logo.png" alt="Sapphira's Magic logo" />
     <p>Mystic Musician • Tarot & Oracle Reader • Celestial Storyteller</p>
   </header>
 
   <main class="container">
     <section class="bio-section">
-      <img src="Sapphira.JPG" alt="Sapphira headshot" />
-      <h2>About Sapphira</h2>
-      <p>Sapphira is a physically disabled, neurodivergent Queer Black femme from Toronto, Canada, and is a multifaceted artist with a celestial twist. Born under the Aquarius sun, fueled by an Aries moon, and adorned with a Virgo rising.</p>
-      <p>Since her youth, Sapphira's heart has always sought to create melodies that speak to her life experiences, crafting songs that hum tales of her true soul's expression. She is currently pouring her spirit into an upcoming EP and a book of poetry.</p>
-      <p>As a gifted Tarot and Oracle reader, a student of astrology and numerology, and a soon-to-be oracle deck creator, Sapphira blends divination with devotion. Through her readings and creations, she aims to guide others in love, healing, and soul connection.</p>
+      <img src="Sapphira.JPG" alt="Portrait of Sapphira" />
+      <div>
+        <h2>About Sapphira</h2>
+        <p>Sapphira is a physically disabled, neurodivergent Queer Black femme from Toronto, Canada, and is a multifaceted artist with a celestial twist. Born under the Aquarius sun, fueled by an Aries moon, and adorned with a Virgo rising.</p>
+        <p>Since her youth, Sapphira's heart has always sought to create melodies that speak to her life experiences, crafting songs that hum tales of her true soul's expression. She is currently pouring her spirit into an upcoming EP and a book of poetry.</p>
+        <p>As a gifted Tarot and Oracle reader, a student of astrology and numerology, and a soon-to-be oracle deck creator, Sapphira blends divination with devotion. Through her readings and creations, she aims to guide others in love, healing, and soul connection.</p>
+      </div>
     </section>
 
     <section class="pricing">
@@ -200,13 +208,13 @@
       </ul>
     </section>
 
-    <div class="cta" style="margin-top: 2rem;">
+    <div class="cta">
       <a href="https://calendly.com/sapphira-c-readings" target="_blank">Book Here</a>
     </div>
 
     <section class="pricing">
       <h2>Sliding Scale Reading</h2>
-      <p style="margin-bottom: 1rem; font-size: 1.05rem;">Available once per month, subject to availability. This offering is designed to support those in financial hardship, while honouring the energetic exchange of Sapphira’s time and intuitive gifts.</p>
+      <p>Available once per month, subject to availability. This offering is designed to support those in financial hardship, while honouring the energetic exchange of Sapphira’s time and intuitive gifts.</p>
       <ul>
         <li>45-minute tarot or oracle session</li>
         <li>Personalized insight based on your top questions</li>
@@ -214,7 +222,7 @@
         <li>All readings are confidential and soul-centred</li>
       </ul>
       <p style="margin-top: 1rem; font-weight: 600;">Apply below to be considered. You’ll receive an email if selected for the upcoming month.</p>
-      <div class="cta" style="margin-top: 2rem;">
+      <div class="cta">
         <a href="https://forms.gle/your-form-link-here" target="_blank">Apply for Sliding Scale</a>
       </div>
     </section>
@@ -224,5 +232,6 @@
     <p>Website made with <span class="sparkle-heart" aria-hidden="true">♥</span> by <a href="https://lcacosta.com" target="_blank">AI with LC</a></p>
     <p>Walk-ins welcome ✨</p>
   </footer>
+
 </body>
 </html>
