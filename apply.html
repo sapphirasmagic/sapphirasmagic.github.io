@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for Sliding Scale – Sapphira's Magic</title>
+
+  <!-- 🌟 Favicon + Fonts -->
+  <link rel="icon" href="S logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6C1D45;
+      --secondary: #D169A0;
+      --accent: #F89FB8;
+      --light-bg: #FAF6F9;
+      --input-focus: var(--accent);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background: var(--light-bg);
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 4rem 1.5rem;
+    }
+
+    .form-wrapper {
+      max-width: 720px;
+      margin: auto;
+      background: white;
+      border-radius: 18px;
+      padding: 3rem 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    p.intro {
+      text-align: center;
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: border 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 2px solid var(--input-focus);
+      box-shadow: 0 0 0 2px rgba(248, 159, 184, 0.25);
+      outline: none;
+    }
+
+    input:hover,
+    textarea:hover {
+      border-color: var(--input-focus);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      margin-top: 2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-note {
+      margin-top: 2.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="form-wrapper">
+    <h1>🌸 Apply for Sliding Scale</h1>
+    <p class="intro">This space is reserved for those with limited resources and big magic to share. No proof of hardship is required — just honesty, clarity, and openness 💖</p>
+
+    <form action="https://formsubmit.co/sapphira.celestine@gmail.com" method="POST">
+      <!-- 🔁 Redirect after submission -->
+      <input type="hidden" name="_redirect" value="thank-you.html" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="location">City or Location</label>
+      <input type="text" id="location" name="location" />
+
+      <label for="story">Why are you applying for the sliding scale option?</label>
+      <textarea id="story" name="story" required></textarea>
+
+      <label for="intentions">What do you hope to receive or explore during your session?</label>
+      <textarea id="intentions" name="intentions" required></textarea>
+
+      <label>
+        <input type="checkbox" name="permission" value="yes" style="margin-right: 0.5rem;" />
+        I give permission for anonymised snippets to be shared in testimonials or marketing
+      </label>
+
+      <button type="submit">✨ Submit Application</button>
+    </form>
+
+    <p class="footer-note">You’ll receive a reply if selected for this month’s reading. Thank you for your trust and magic 🌙</p>
+  </section>
+
+</body>
+</html>
