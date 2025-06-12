@@ -191,6 +191,15 @@ header::after {
       animation: sparkle 1.5s infinite ease-in-out;
     }
 
+    @keyframes sparkle {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+    }
+
+    @keyframes sparklePulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.85; }
+    }
     @media (min-width: 768px) {
       .bio-section {
         display: flex;
@@ -252,7 +261,7 @@ header::after {
       </ul>
       <p style="margin-top: 1rem; font-weight: 600;">Apply below to be considered. You’ll receive an email if selected for the upcoming month.</p>
       <div class="cta">
-        <a href="https://forms.gle/your-form-link-here" target="_blank">Apply for Sliding Scale</a>
+        <a href="apply.html" target="_blank">Apply for Sliding Scale</a>
       </div>
     </section>
   </main>
