@@ -119,6 +119,20 @@
       font-size: 0.95rem;
       color: #666;
     }
+    .sparkle-heart {
+      display: inline-block;
+      animation: sparkle 1.5s infinite ease-in-out;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+    }
+
+    @keyframes sparklePulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.85; }
+    }
   </style>
 </head>
 <body>
@@ -157,6 +171,9 @@
 
     <p class="footer-note">You’ll receive a reply if selected for this month’s reading. Thank you for your trust and magic 🌙</p>
   </section>
-
+<footer>
+    <p>Website made with <span class="sparkle-heart" aria-hidden="true">♥</span> by <a href="https://lcacosta.com" target="_blank">AI with LC</a></p>
+    <p>Walk-ins welcome ✨</p>
+  </footer>
 </body>
 </html>
